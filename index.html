@@ -63,6 +63,10 @@
             align-items: center;
             height: 100vh; /* 可选，确保容器的高度 */
         }
+        .fixed-bottom {
+            margin-left: -10px;
+            height: 55px;
+        }
     </style>
     <div class="fixed-bottom">
         <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" rel="noreferrer" target="_blank">萌备114514191980</a>
@@ -88,7 +92,8 @@
                 "left": x,
                 "position": "absolute",
                 "font-weight": "bold",
-                "color": color16()
+                "color": color16(),
+                "white-space": "nowrap"
             });
             $("body").append($i);
             load_sound('0721.aac');
